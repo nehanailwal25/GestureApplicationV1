@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#E5E8E8"
+        android:layout_weight="0">
+
+        <ImageView
+            android:id="@+id/Circle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_circle" />
+
+        <ImageView
+            android:id="@+id/Sqr"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_square" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_line" />
+
+        <ImageView
+            android:id="@+id/triangle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_triangle" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/paintRelativeArea"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="50dp"
+            android:background="#F2F3F4">
+
+            <com.example.gestureapplicationv1.DrawPath
+                android:id="@+id/paintArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customeborder"/>
+
+            <ImageView
+                android:id="@+id/colorButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/color_circle"/>
+
+            <ScrollView
+                android:id="@+id/color_palet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="70dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:nestedScrollingEnabled="true">
+
+                    <ImageView
+                        android:id="@+id/cE74C3C"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#E74C3C" />
+
+                    <ImageView
+                        android:id="@+id/c9B59B6"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#9B59B6" />
+
+                    <ImageView
+                        android:id="@+id/c2980B9"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#2980B9" />
+
+                    <ImageView
+                        android:id="@+id/c5DADE2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#5DADE2" />
+                    <ImageView
+                        android:id="@+id/c1ABC9C"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#1ABC9C"/>
+
+                    <ImageView
+                        android:id="@+id/c117A65"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#117A65"/>
+
+                    <ImageView
+                        android:id="@+id/cF4D03F"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#F4D03F"/>
+
+                    <ImageView
+                        android:id="@+id/cF39C12"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#F39C12"/>
+                    <ImageView
+                        android:id="@+id/cDC7633"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#DC7633"/>
+                    <ImageView
+                        android:id="@+id/c34495E"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#34495E"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="50" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:background="#E5E8E8"
+        android:id="@+id/bottomArea">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/Circlefilled"
+            android:layout_weight="50"
+            android:src="@drawable/ic_circlefilled"/>
+
+        <ImageView
+            android:id="@+id/Sqarefilled"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_squarefilled"/>
+
+        <ImageView
+            android:id="@+id/linefilled"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_line"/>
+
+        <ImageView
+            android:id="@+id/trianglefilled"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_trianglefilled"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Button" />
+
+</LinearLayout>
+
+
+            <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <com.example.gestureapplicationv1.DrawPath-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

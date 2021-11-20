@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructionsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Gesture Based Drawing"
+            />
+
+
+
+        <TextView android:layout_width="match_parent"
+            android:id="@+id/instructions"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:textColor="@color/black"
+            android:nestedScrollingEnabled="true"
+            android:textSize="18dp"
+            android:text="\nThis application will help you to design your basic drawings with so much perfection. \n\nPlease read the below instructions before you click Start button: \n
+1. After you click the Start button, You will be navigated to paint screen. On the left side of that screen, you will see a color dial. You can change the color of drawing with the help of it.
+\n2. After selection, Draw any rough shape you wish, by moving your finger on the screen.
+\n3. Once you draw one shape, you need to click on the exact shape which you want to see either outlined or filled from the palette.
+\n4. If you want to delete any shape from your drawing, you can click the delete button from bottom right corner and then tap on the shape which you want to delete.
+\n5. Once you are done with delete, you will see a save button in place of delete and that will save the changes. After that you can resume the drawing
+\n\n Hope you enjoy it! \n     Happy Painting. "
+        />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:text="START"
+            android:layout_marginHorizontal="100dp">
+        </Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
